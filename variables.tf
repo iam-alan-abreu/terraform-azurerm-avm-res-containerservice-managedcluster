@@ -106,6 +106,12 @@ variable "default_node_pool" {
   }
 }
 
+variable "create_nodepool_before_destroy" {
+  type        = bool
+  description = "Azure region where the resource should be deployed."
+  default    = false
+}
+
 variable "location" {
   type        = string
   description = "Azure region where the resource should be deployed."
