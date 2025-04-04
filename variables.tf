@@ -618,6 +618,7 @@ variable "node_pools" {
     name                          = string
     vm_size                       = string
     capacity_reservation_group_id = optional(string)
+    temporary_name_for_rotation   = optional(string)
     auto_scaling_enabled          = optional(bool, false)
     max_count                     = optional(number)
     min_count                     = optional(number)
