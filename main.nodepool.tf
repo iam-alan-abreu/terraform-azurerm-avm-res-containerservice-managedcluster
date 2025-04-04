@@ -40,6 +40,7 @@ module "nodepools" {
   tags                           = each.value.tags
   timeouts                       = var.kubernetes_cluster_node_pool_timeouts
   ultra_ssd_enabled              = each.value.ultra_ssd_enabled
+  temporary_name_for_rotation    = each.value.temporary_name_for_rotation
   vnet_subnet_id                 = each.value.vnet_subnet_id
   workload_runtime               = each.value.workload_runtime
   zones                          = each.value.zones
